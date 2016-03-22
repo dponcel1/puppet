@@ -11,7 +11,7 @@ class dapb::httpd {
   notify => Service["httpd"],
     ensure => file,
     require => Package["httpd"],
-    content => template("dapb/httpd.conf.erb"),
+    content => template("dapb/rhel7-test.conf.erb"),
   }
   file { "/var/www/rhel7-test":
     ensure => "directory",
