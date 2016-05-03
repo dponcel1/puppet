@@ -1,6 +1,6 @@
 Listen <%= @httpd_port %>
 NameVirtualHost *:<%= @httpd_port %>
-<VirtualHost *:<%= @httpd_port %>
+<VirtualHost *:<%= @httpd_port %>>
   DocumentRoot /var/www/rhel7-test/
   ServerName <%= @fqdn %>
   <Directory "/var/www/rhel7-test/">
